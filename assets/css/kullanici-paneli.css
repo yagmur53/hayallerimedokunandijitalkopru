@@ -1,0 +1,16 @@
+.kullanici_paneli-game-selection {
+    background: linear-gradient(180deg, rgba(255, 240, 233, 1) 0%, rgba(206, 234, 222, 1) 100%);
+}
+
+.kullanici-paneli-hero {
+    background-color: #fff0e9 !important;
+}
+
+.kullanici-paneli-hero .card-body {
+    background-color: #fff !important;
+    border-radius: 30px;
+}
+
+.kullanici-paneli-hero img {
+    border-radius: 30px;
+}

@@ -1,0 +1,182 @@
+/* Oyun Kutusu */
+.game-box {
+    width: 650px;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /* Pastel degrade */
+    border-radius: 25px; /* Yumuşak köşeler */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 4px solid #FFD1DC; /* Şirin kenar vurgusu */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 sütun oluştur */
+    gap: 10px;
+    justify-content: center;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #FFF8DC, #FFC1CC); /* Yumuşak degrade */
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    background: #FFD1DC;
+}
+
+/* Mayın ve Güvenli Hücreler */
+.mine {
+    background: #FF867C; /* Daha sıcak kırmızı */
+    color: white;
+}
+
+.safe {
+    background: #9c1a4c; /* Yumuşak yeşil */
+    color: white;
+}
+
+/* Kontrol Kutusu */
+.control-box {
+    width: 30%;
+    background: linear-gradient(135deg, #FFF4E0, #FADADD); /* Pastel degrade */
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border: 4px solid #FFC3A0;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #FFB6C1, #FFDAB9); /* Hoş tonlar */
+    border-radius: 20px;
+}
+
+/* Butonlar */
+.button {
+    padding: 10px 25px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #FFC3A0, #FF69B4);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+}
+
+/* Baloncuklar */
+.bubble {
+    position: absolute;
+    bottom: -50px; /* Baloncuklar sayfanın altından başlar */
+    width: 40px;
+    height: 40px;
+    background: rgba(173, 216, 230, 0.5); /* Şeffaf mavi baloncuk */
+    border-radius: 50%; /* Yuvarlak şekil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    animation: float 5s linear forwards, pop 1s ease-out 5s forwards; /* Uçma ve ardından patlama */
+    z-index: 1;
+}
+
+/* Farklı boyutlarda baloncuklar */
+.bubble:nth-child(2n) {
+    width: 50px;
+    height: 50px;
+}
+
+.bubble:nth-child(3n) {
+    width: 60px;
+    height: 60px;
+}
+
+/* Uçuş Animasyonu */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px); /* Belirtilen yüksekliğe ulaşır */
+        opacity: 1;
+    }
+}
+
+
+/* Daha Küçük Ekranlar İçin (Tablet ve Küçük Ekranlar) */
+@media (max-width: 768px) {
+    .game-box, .control-box {
+        width: 95%; /* Kutuları ekran genişliğine uyacak şekilde ayarla */
+        margin: 10px auto; /* Merkezi hizalama */
+        padding: 15px; /* Daha kompakt düzen */
+        box-sizing: border-box; /* Taşmayı önlemek için kutu boyutlandırma */
+    }
+
+    .game-board {
+        grid-template-columns: repeat(8, 1fr); /* Hücre düzenini daralt */
+        gap: 8px; /* Hücreler arasındaki boşluğu ayarla */
+    }
+
+    .cell {
+        width: 40px;
+        height: 40px;
+        font-size: 14px; /* Küçük yazı boyutu */
+    }
+}
+
+/* Telefon Ekranları İçin (Çok Küçük Ekranlar) */
+@media (max-width: 480px) {
+    .game-box, .control-box {
+        width: 100%; /* Tam genişlik kullan */
+        margin: 5px 0; /* Dikey boşluk bırak */
+        padding: 10px;
+        box-sizing: border-box; /* Kenarların taşmasını önle */
+    }
+
+    .game-board {
+        grid-template-columns: repeat(6, 1fr); /* Daha az sütun */
+        gap: 5px; /* Hücreler arası daha dar boşluk */
+    }
+
+    .cell {
+        width: 30px;
+        height: 30px;
+        font-size: 12px; /* Daha küçük ekranlar için optimize yazı */
+        border-radius: 10px; /* Daha yuvarlak hücreler */
+    }
+
+    .score {
+        font-size: 18px; /* Daha kompakt yazı */
+        padding: 6px;
+    }
+
+    .button {
+        padding: 8px 15px; /* Daha küçük butonlar */
+        font-size: 14px;
+    }
+}
+
+.hero_firstcard {
+    flex-direction: row !important;
+    height: 100% !important;
+    padding: 50px 0 !important;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column !important;
+    }
+}

@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: "Sour Gummy", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-row {
+    display: flex;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 10px;
+}
+
+.mb-40 {
+    margin-bottom: 20px;
+}
+
+.spectacledcoder-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgb(228, 228, 228);
+    border-radius: 25px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    box-shadow: 1px 1px 20px orange;
+    z-index: 100;
+    margin: auto;
+    margin-left: -50px;
+    border-radius: 25px;
+}
+
+.square h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-family: "Sour Gummy", sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.62);
+}
+
+.spectacledcoder-hover-fill-button {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid orange;
+    background-color: white;
+    font-family: 'Belanosima', sans-serif;
+    cursor: pointer;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.color-fill {
+    position: absolute;
+    margin-left: -7px;
+    width: 20px;
+    height: 40px;
+    border-radius: 25px 0px 0px 25px;
+    background-color: orange;
+    visibility: hidden;
+}
+
+.spectacledcoder-hover-fill-button:hover .color-fill {
+    visibility: visible;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    transition: all 0.5s;
+    background-color: orange;
+}
+
+.spectacledcoder-hover-fill-button:hover {
+    box-shadow: 1px 1px 20px orange;
+    transition: all 1s;
+}
+
+.spectacledcoder-hover-fill-button:hover p {
+    color: white;
+    transition: all 0.3s;
+}
+
+.spectacledcoder-hover-fill-button p {
+    margin: auto;
+    font-size: larger;
+    z-index: 10;
+}
+
+.form-container {
+    margin-right: 50px;
+    width: 50%;
+}
+
+.spectacledcoder-input {
+    all: unset;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.259);
+    padding-bottom: 5px;
+    background-color: white;
+    font-size: medium;
+    font-weight: 200 !important;
+    width: 90%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.spectacledcoder-password {
+    width: 100%;
+}
+
+.spectacledcoder-password:hover .eye-icon {
+    visibility: visible;
+}
+
+.eye-icon {
+    visibility: hidden;
+    z-index: 100;
+    margin-left: 10px;
+}
+
+.eye-icon:hover {
+    cursor: pointer;
+}
+
+.sign1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-bottom: auto;
+    bottom: 50px;
+    margin-left: auto;
+    left: 100px;
+    transform: rotateZ(0deg);
+    animation-name: sign1-animate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sign2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: auto;
+    top: 50px;
+    margin-right: auto;
+    right: 100px;
+    transform: rotateZ(0deg);
+    animation-name: sign2-animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sign1-animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(50deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes sign2-animate {
+    0% {
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        font-family: 'Belanosima', sans-serif;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .spectacledcoder-container {
+        width: 80%;
+        height: 550px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 20px rgb(228, 228, 228);
+        border-radius: 25px;
+        align-items: center;
+    }
+
+    .square {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+        box-shadow: 1px 1px 20px orange;
+        z-index: 100;
+        margin: auto;
+        margin-top: -50px;
+        border-radius: 25px;
+    }
+
+    .form-container {
+        margin: auto;
+        width: 80%;
+        height: 60%;
+    }
+
+    .spectacledcoder-hover-fill-button {
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        min-width: 100px;
+        min-height: 40px;
+        border-radius: 25px;
+        outline: none;
+        border: 1px solid orange;
+        background-color: white;
+        font-family: 'Belanosima', sans-serif;
+        cursor: pointer;
+        align-items: center;
+        justify-content: left;
+
+    }
+
+    .color-fill {
+        position: absolute;
+        margin-left: -7px;
+        width: 20px;
+        height: 40px;
+        border-radius: 25px 0px 0px 25px;
+        background-color: orange;
+        visibility: hidden;
+    }
+
+    .spectacledcoder-hover-fill-button:hover .color-fill {
+        visibility: visible;
+        width: 100px;
+        height: 40px;
+        border-radius: 25px;
+        transition: all 0.5s;
+        background-color: orange;
+        color: white !important;
+    }
+
+    .spectacledcoder-hover-fill-button:hover {
+        box-shadow: 1px 1px 20px orange;
+        transition: all 1s;
+
+    }
+
+    .spectacledcoder-hover-fill-button p {
+        margin: auto;
+        font-size: larger;
+        z-index: 10;
+    }
+
+    .sign1 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-bottom: auto;
+        bottom: 20px;
+        margin-left: auto;
+        left: 20px;
+        transform: rotateZ(0deg);
+
+    }
+
+    .sign2 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-top: auto;
+        top: 20px;
+        margin-right: auto;
+        right: 10px;
+        transform: rotateZ(0deg);
+        animation-name: sign2-animate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.disclaimer a {
+    text-decoration: none;
+    color: #202020;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 900;
+}
+
+.disclaimer a:hover {
+    text-decoration: overline;
+}
+
+.exit-ico {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.exit-ico a img {
+    display: block;
+    height: 25px;
+    width: auto;
+}

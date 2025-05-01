@@ -1,0 +1,215 @@
+@media (min-width: 576px) {
+    .container-sm,
+    .container {
+        max-width: 540px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1320px !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1520px !important;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1720px !important;
+    }
+}
+
+/* Header */
+
+.global_header,
+.navbar-clone {
+    background-color: #A7D9CE !important;
+    padding: 10px 0;
+}
+
+.global_header-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.global_nav-links .global_navbar-list .global_navbar-link {
+    color: #f4ffff;
+    font-family: "DynaPuff", system-ui;
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.62);
+}
+
+.global_nav-links .global_navbar-list .global_navbar-link:after {
+    color: #efd9db !important;
+}
+
+.global_nav-links .global_navbar-list .global_navbar-link:hover {
+    color: #efd9db !important;
+}
+
+.global_dropdown {
+    background-color: #A7D9CE;
+}
+
+.global_nav-links .global_dropdown-link {
+    color: #f4ffff;
+    font-family: "DynaPuff", system-ui;
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.62);
+}
+
+.global_navbar-info i {
+    color: #f4ffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.62);
+}
+
+.global_navbar-info i:hover {
+    color: #efd9db;
+}
+
+.global_navbar-login a,
+.navbar-clone .global_navbar-login a {
+    border: none;
+    font-size: 12px;
+    font-family: "DynaPuff", system-ui;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.62);
+    font-weight: 500;
+}
+
+.global_navbar-login .btn-primary,
+.navbar-clone .global_navbar-login .btn-primary {
+    background-color: #ffc8c9 !important;
+}
+
+.global_navbar-login .btn-yellow,
+.navbar-clone .global_navbar-login .btn-yellow {
+    background-color: #fab758 !important;
+}
+
+.global_navbar-login .btn-primary:hover {
+    background-color: #ffc8c9;
+}
+
+.global_info-box {
+    background-color: #5f837a;
+}
+
+.global_info-box-widget {
+    margin: 0;
+    font-family: "Delius", cursive;
+    font-size: 14px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.global_info-box-widget-title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.global_info-box-social-icon {
+    color: #9eccc1 !important;
+    box-shadow: none !important;
+}
+
+.global_hamburger {
+    color: #fcfefb !important;
+}
+
+.global_mobile_nav {
+    background-color: #5f837a;
+}
+
+.global_mobile_contact {
+    font-size: 14px;
+    font-family: "Delius", cursive;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.62);
+    font-weight: 400;
+}
+
+/* Header */
+
+
+/* Footer */
+.global_footer {
+    background-color: #406060;
+}
+
+.global_footer_widget_title {
+    font-family: "Delius", cursive;
+    font-size: 15px;
+    line-height: 1.5;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.global_footer_widget {
+    font-family: 'Delius';
+}
+
+.global_footer_widget ul li a {
+    color: #cacaca !important;
+}
+
+.global_footer_widget ul li:hover a {
+    color: #efd9db !important;
+}
+
+.global_footer_widget a {
+    color: #cacaca !important;
+}
+
+.global_footer_widget a:hover {
+    color: #efd9db !important;
+}
+
+/* Footer */

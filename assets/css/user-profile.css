@@ -1,0 +1,122 @@
+.navbar-clone .user_info {
+    display: none;
+
+}
+
+.user_info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user_profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user_avatar {
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.user_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user_message {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.user_name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.user_panel {
+    position: absolute;
+    top: 100%;
+    right: -10px;
+    width: 100%;
+    max-width: 300px;
+    height: max-content;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0;
+    z-index: -100;
+    transform: translateY(50%);
+    transition: 350ms;
+    pointer-events: none;
+}
+
+.user_panel.is-active {
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 15;
+    transform: translateY(0);
+}
+
+.user_panel_info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_panel_avatar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user_panel_avatar {
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.user_panel_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user_panel_message {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.user_panel_name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.user_panel_logout,
+.user_settings {
+    cursor: pointer;
+}
+
+.user_panel_logout img,
+.user_settings img {
+    width: 20px;
+    height: auto;
+    line-height: 1;
+}
+
+

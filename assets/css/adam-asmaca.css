@@ -1,0 +1,209 @@
+.hero_firstcard {
+    height: 100% !important;
+    min-height: 400px;
+    padding: 20px 0;
+}
+
+/* Variables */
+:root {
+    --orange: #ffa600;
+    --green: #c1d72e;
+    --blue: #82d2e5;
+    --grey: #f3f3f3;
+    --white: #fff;
+    --base-color: var(--green);
+}
+
+/* Mixin's */
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+*::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.game_wrapper .fade {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.game_wrapper .opacity {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.game_wrapper .corners {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.game_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game_wrapper canvas {
+    color: #000;
+    border: #000 dashed 2px;
+    padding: 15px;
+}
+
+.game_wrapper-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stickman_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_button-cs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game_wrapper h1, .game_wrapper h2, .game_wrapper h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-family: "Original Surfer", sans-serif;
+    color: #5c9680;
+}
+
+.game_wrapper h1 {
+    font-size: 34px;
+}
+
+.game_wrapper h2 {
+    font-size: 26px;
+}
+
+#game_hold{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game_hold ul li{
+    border-bottom: 1px solid #000;
+}
+
+.game_wrapper p {
+    font-size: 19px;
+}
+
+#game_alphabet {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+#game_alphabet li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: #0D1B2A;
+    text-align: center;
+    color: #fff0e9;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px var(--white);
+}
+
+#game_letterspan{
+    width: 100%;
+}
+
+#game_alphabet li:hover {
+    background: #A7D9CE;
+    border: solid 1px #A7D9CE;
+    color: #000;
+}
+
+#game_my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+#game_my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+
+.game_active {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.game_active:hover {
+    opacity: 0.4;
+}
+
+#game_mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+}
+
+button {
+    background: #A7D9CE;
+    color: #fff;
+    border: solid 1px #A7D9CE;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+}
+
+button:hover {
+    transition: all 0.3s ease-in-out;
+    background: #fff0e9;
+    border: solid 1px var(--white);
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    #game_alphabet {
+        padding: 0 0 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #game_alphabet {
+        padding: 0 0 0 25px;
+    }
+}
+
